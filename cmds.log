@@ -1,0 +1,4 @@
+  995  ls -ltr
+  996  mkdir CUSTOMERS
+  997  for i in `cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 1000 | awk '{ print $2}' `; do grep $i amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/$i.txt; done
+  998  history > cmds.log

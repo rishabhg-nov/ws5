@@ -1,0 +1,50 @@
+Script started on 2022-10-11 17:25:23-04:00
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ mkdir CUSTOMERS
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ for i in `cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 3 | awk '{ print $2}' `;[C[1P[1@1[1@0[1@0[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C do grep $i amazon_reviiews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/$i.txt; done
+
+
+
+
+
+
+
+
+
+
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ history > cmds.log
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ ls -l CUSTOMERS | wc -l
+1001
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ ls -l CUSTOMERS | head
+total 4080
+-rw-rw-r-- 1 rishabh rishabh   965 Oct 11 17:30 12598621.txt
+-rw-rw-r-- 1 rishabh rishabh   392 Oct 11 17:36 13993962.txt
+-rw-rw-r-- 1 rishabh rishabh   329 Oct 11 17:38 14403122.txt
+-rw-rw-r-- 1 rishabh rishabh   744 Oct 11 17:30 14720400.txt
+-rw-rw-r-- 1 rishabh rishabh   269 Oct 11 17:40 14807203.txt
+-rw-rw-r-- 1 rishabh rishabh   350 Oct 11 17:40 16056234.txt
+-rw-rw-r-- 1 rishabh rishabh   655 Oct 11 17:31 18548250.txt
+-rw-rw-r-- 1 rishabh rishabh   464 Oct 11 17:33 18548312.txt
+-rw-rw-r-- 1 rishabh rishabh   464 Oct 11 17:33 18800155.txt
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ 
+]0;rishabh@sjsu:~/ws5[rishabh@sjsu ws5]$ exit
+
+Script done on 2022-10-11 17:51:03-04:00
